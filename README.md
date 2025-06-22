@@ -49,16 +49,20 @@ Docker
 
 #### Clone do repositorio
 
-$ git clone <https://github.com/eduardobrandao/testeIBM>
+$ git clone <https://github.com/eduardobrandao/TesteTrademaster.git>
 
 # Acesse a pasta do projeto no terminal/cmd
 
 ## $ cd projeto
 
-#### Podemos executar um desses comandos abaixo, para instalar as dependencias
+#### Executando o projeto via Docker
+
+$ Para subir a imagem Docker rode o comando
+$ Docker-compose up --build
+OBS.: Com esse comando subirar as instancias pre-definidas (APP, REBBITMQ e o POSTGRES) no arquivo Dockerfile
+OBS2.: Às vezes uma das 3 instancias fica sem iniciar (conferir as instancias no Docker Desktop)
 
 $ npm install
-$ yarn install
 
 ---
 
