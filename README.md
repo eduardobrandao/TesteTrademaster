@@ -53,24 +53,41 @@ $ git clone <https://github.com/eduardobrandao/TesteTrademaster.git>
 
 ## Acesse a pasta do projeto no terminal/cmd
 
-### $ cd projeto
+### $ cd <sua pasta>/TesteTrademaster/ecommerce-event-processor
 
 #### Executando o projeto via Docker
 
 $ Para subir a imagem Docker rode o comando
 
-$ Docker-compose up --build
+$ docker-compose up --build
 
 OBS.: Com esse comando irão subir as instancias pre-definidas (APP, REBBITMQ e o POSTGRES) no arquivo Dockerfile
 
 OBS2.: Às vezes uma das 3 instancias fica sem iniciar (conferir as instancias no Docker Desktop)
 
-$ npm install
+#### Executando teste na aplicação
+
+$ Para testar sua aplicação (ainda usando a imagem Docker) rode o seguinte o comando:
+
+docker exec -it ecommerce-event-processor-app-1 node sendMessage.js (esse comando executará o script de teste que estar na raiz do projeto)
+
+#### Rodando o Projeto
+
+Local
+
+#### Executando teste(local) na aplicação
+
+$ Para testar sua aplicação (agora localmente) rode os seguintes o comandos:
+
+$ npm install (para instalar as dependencias do projeto localmente)
 
 ---
 
-#### Para execute a aplicação em modo de desenvolvimento, roda o seguinte comando 
+#### Para visualizar as chamadas ao RabbitMQ acesse esse link com as segintes credencias:
 
-$ npm run dev
+$ http://localhost:15672/#/users
 
-#### O servidor iniciará na porta: 3333 - acesse <http://localhost:3333>
+$ Credencias: User: guest
+
+$ Credencias: password: guest
+
