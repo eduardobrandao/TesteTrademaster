@@ -1,6 +1,6 @@
 ## README
 
-<P align="center"> ## Teste Trademaster </p>
+<P align="center"> Teste Trademaster </p>
 
 # 🛒 Ecommerce Event Processor
 
@@ -38,12 +38,12 @@ Este projeto simula uma plataforma de e-commerce que consome eventos de forma as
 ## Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua maquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) [Docker Desktop](https://docs.docker.com/desktop/setup/install/windows-install/).
 Além disso é bom ter um editor para trabalhar com codigo como [VSCode](https://code.visualstudio.com/)
 
 #### Rodando o Projeto
 
-bash
+Docker
 
 ---
 
