@@ -7,6 +7,7 @@ const addToBatch = (event) => {
 
 const processBatch = async () => {
   if (batch.length === 0) return;
+
   logger.info(`Processando lote de ${batch.length} eventos.`);
   try {
     for (const event of batch) {
